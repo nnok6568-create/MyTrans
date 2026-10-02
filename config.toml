@@ -1,0 +1,38 @@
+# base를 지정하지 않아 사용자의 시스템 설정(라이트/다크)을 따른다.
+[theme]
+# Windows는 국기 이모지를 "US" 같은 글자로 표시하므로, 국기 문자에만 Twemoji 국기 폰트를 적용한다.
+font = "Twemoji Country Flags, Source Sans, sans-serif"
+baseRadius = "medium"
+# 번역 결과(st.code)가 코드처럼 보이지 않도록 본문과 같은 글꼴을 쓴다.
+codeFont = "Twemoji Country Flags, Source Sans, sans-serif"
+codeFontSize = "1rem"
+
+[[theme.fontFaces]]
+family = "Twemoji Country Flags"
+url = "https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1.8/dist/TwemojiCountryFlags.woff2"
+unicodeRange = "U+1F1E6-1F1FF, U+1F3F4, U+E0062-E007F"
+
+[theme.light]
+primaryColor = "#2563EB"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F5F9"
+textColor = "#0F172A"
+borderColor = "#E2E8F0"
+codeBackgroundColor = "#F8FAFC"
+
+[theme.light.sidebar]
+backgroundColor = "#F1F5F9"
+
+[theme.dark]
+primaryColor = "#3B82F6"
+backgroundColor = "#0F172A"
+secondaryBackgroundColor = "#1E293B"
+textColor = "#E2E8F0"
+borderColor = "#334155"
+codeBackgroundColor = "#1E293B"
+
+[theme.dark.sidebar]
+backgroundColor = "#111827"
+
+[server]
+headless = true
